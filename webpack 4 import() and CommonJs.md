@@ -79,10 +79,10 @@ import()导入json文件支持只导入部分属性，包括在strict-ESM中，j
 ```js
 module.exports = 42;
 ```
-你应该这样写：
+在webpack4中你需要通过<b>.default</b>来获取结果：
 ```js
-// webpack 3中
+// webpack 3打印的结果
 42
-// webpack 4中
+// webpack 4打印的结果
 { default: 42 }
 ```
