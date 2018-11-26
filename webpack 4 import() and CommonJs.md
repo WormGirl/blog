@@ -45,9 +45,9 @@ export default "default";
 { __esModule: true, name: "name", default: "default" }
 ```
 ### A1: import(CommonJS)
-当我们import一个Commonjs模块时，webpack 3 仅仅是解析为module.exports的值，而webpack 4会为importd的commonjs模块创造一个带命名空间的对象，以此来让import()导入的结果统一为带命名空间的对象
+当我们import一个Commonjs模块时，webpack 3 仅仅是解析为module.exports的值，而webpack 4会为import的commonjs模块创造一个带命名空间的对象，以此来让import()导入的结果统一为带命名空间的对象
 
-CommonJs模块的默认导出始终是module.exports的值，webpack还允许通过import { property } from "commonjs"从commonjs模块中导入某个属性，所以我们也允许import()方法也可以这样做。
+CommonJs模块的默认导出始终是module.exports的值，webpack还允许通过import { property } from "commonjs"从commonjs模块中导入某个属性，所以我们允许import()方法也可以这样做。
 > 注意：在这种情况下，默认情况下defalut属性被隐藏在webpack生成的default对象里
 ```js
 // webpack 3
@@ -66,12 +66,12 @@ webpack支持通过import()导入已经转换为ES6模块的commonjs模块
 { __esModule: true, name: "name", default: "default" }
 ```
 ### B2: 在nodejs .mjs(es6模块)文件中import(transpiled-ESM)
-在strict-ESM中不支持__esModule这样的标记，你可以把它理解为一种破坏行为，但至少与node.js一致
+在strict-ESM中不识别__esModule这样的标记，你可以把它理解为一种破坏行为，但至少与node.js一致
 ```js
 { default: { __esModule: true, name: "name", default: "default" } }
 ```
 ### A4 and B4: import(json)
-import()导入json文件支持只导入部分属性，包括在strict-ESM中，json也会暴露完整的对象作为默认导出
+import(json)是支持导入部分属性的，包括在strict-ESM中，json也会暴露完整的对象作为默认导出
 ```js
 { name: "name", default: { name: "name", default: "default" } }
 ```
@@ -79,7 +79,7 @@ import()导入json文件支持只导入部分属性，包括在strict-ESM中，j
 ```js
 module.exports = 42;
 ```
-在webpack4中你需要通过<b>.default</b>来获取结果：
+在webpack4中通过import()导入后，你需要通过<b>result.default</b>来获取结果：
 ```js
 // webpack 3打印的结果
 42
