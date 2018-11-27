@@ -78,8 +78,7 @@ CommonJs模块的默认导出始终是module.exports的值，webpack还允许通
 ```
 
 ### A2: import(transpiled-ESM)
-
-webpack支持通过import()导入已经转换为ES6模块的commonjs模块
+webpack支持通过import()导入已经转换为ES6模块的Commonjs模块
 
 ```js
 { __esModule: true, name: "name", default: "default" }
