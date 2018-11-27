@@ -48,7 +48,7 @@ export default "default";
 
 ### A3 and B3: import(ESM)
 
->ESM规范实际上已经涵盖了这种情况。列子里的（A）或（B）中通过import()方法引入（3）将会返回一个带命名空间（namespace）的对象，为了考虑到兼容性我们在命名空间（namespace）对象里引入了__esModule属性使其可被import()导入
+ESM规范实际上已经涵盖了这种情况。列子里的（A）或（B）中通过import()方法引入（3）将会返回一个带命名空间（namespace）的对象，为了考虑到兼容性我们在命名空间（namespace）对象里引入了__esModule属性使其可被import()导入
 （A）或（B）打印的结果如下：
 
 ```js
