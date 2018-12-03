@@ -50,7 +50,7 @@ sudo node servser.js
 
 ## 如果包含服务端请求怎么办？
 
->一般本地开发都会配置代理，这里也一样，只要配置好代理就可以了，安装[express-http-proxy](https://www.npmjs.com/package/express-http-proxy)包即可
+>一般本地开发都会配置代理，这里也一样，只要配置好代理就可以了，安装[express-http-proxy](https://www.npmjs.com/package/express-http-proxy)包即可
 
 ```js
 npm install express-http-proxy --save
@@ -99,4 +99,4 @@ node server
 ## 不想加上端口号？
 配置为默认端口号80即可，这样访问就不需要访问加端口号了
 
-END
+END
