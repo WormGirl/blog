@@ -38,7 +38,7 @@ console.log('working on 3000')
  node servser.js
 ```
 
-如果webapp下的项目不包含服务端请求，在浏览器里打开localhost:3000就可以正常访问了
+如果webapp下的项目不包含服务端请求，在浏览器里打开localhost:3000就可以正常访问了
 
 >Macos中非root用户不能监听<1024的端口，这个是内核代码里写着的，如果要操作1024以下的端口可以运行
 
@@ -49,6 +49,7 @@ sudo node servser.js
 生产环境最好不要这样操作，风险很大
 
 ## 如果包含服务端请求怎么办？
+
 >一般本地开发都会配置代理，这里也一样，只要配置好代理就可以了，安装[express-http-proxy](https://www.npmjs.com/package/express-http-proxy)包即可
 
 ```js
@@ -67,11 +68,13 @@ app.use('/', proxy('api.demo.com'))
 app.listen('3000')
 console.log('working on 3000')
 ```
+
 重新运行
 
 ```js
 node server
 ```
+
 刷新浏览器，搞定。
 
 ## 如何自定义域名？
@@ -90,9 +93,10 @@ node server
 ::1             www.demo.com
 ::1             sub.demo.com
 ```
+
 打开www.demo.com:3000即可访问
 
 ## 不想加上端口号？
 配置为默认端口号80即可，这样访问就不需要访问加端口号了
-********
+
 END
