@@ -19,13 +19,13 @@ IE/Edge，Chrome，Safari，Opera，Firefox
 主流浏览器的内核及变化如下（面试题重点，现在网上写的好多都过时了，于是我总结了一下）
 
 ## 主流浏览器	内核
-|浏览器|内核|
-| ------ | ------ | ------ |
-|IE -> Edge | trident->EdgeHTML|
-|Chrome	| webkit->blink|
-|Safari |	webkit|
-|Firefox | Gecko|
-|Opera | Presto->blink|
+| 浏览器 | 内核 |
+| ------ | ------ |
+| IE -> Edge | trident->EdgeHTML |
+| Chrome	| webkit->blink |
+| Safari |	webkit |
+| Firefox | Gecko |
+| Opera | Presto->blink |
 
 > Edge是微软随win10推出的（微软嫌弃IE了）
 
