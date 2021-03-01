@@ -7,4 +7,4 @@
 + [Javascript垃圾回收和内存管理](https://github.com/WormGirl/blog/blob/master/%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%26%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86.md)
 + [Javascript new运算符](https://github.com/WormGirl/blog/blob/master/new%E8%BF%90%E7%AE%97%E7%AC%A6.md)
 + [浏览器渲染引擎和JS引擎](https://github.com/WormGirl/blog/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93%E5%BC%95%E6%93%8E%E5%92%8CJS%E5%BC%95%E6%93%8E.md)
-+ [node异步I/O](https://github.com/WormGirl/blog/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93%E5%BC%95%E6%93%8E%E5%92%8CJS%E5%BC%95%E6%93%8E.md)
++ [node异步I/O](https://github.com/WormGirl/blog/blob/master/node%E5%BC%82%E6%AD%A5IO.md)
