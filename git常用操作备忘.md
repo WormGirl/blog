@@ -8,3 +8,7 @@ git reset --hard commit_id    退到/进到 指定commit_id
 ```bash
 git push origin HEAD --force
 ```
+3.忽略已提交文件跟踪
+```bash
+git update-index --assume-unchanged path
+```
